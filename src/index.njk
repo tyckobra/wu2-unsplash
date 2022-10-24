@@ -4,6 +4,7 @@ layout: base.njk
 
 <main>
     <h1>Data dump</h1>
+    <p>Min github user: {{ github.login }} och plats: {{ github.location }}.</p>
     {% asyncAll  item in unsplash.results %}
         <!-- <pre>{{ item | dump(2) }}</pre> -->
         <!-- <img src="{{ item.urls.small }}" alt="{{ item.description }}"> -->

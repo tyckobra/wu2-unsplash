@@ -211,3 +211,18 @@ Lägg nu till fägerna och skalan i `:root` så kan dy sedan använda dem i din 
     color: var(--english-violet);
 }
 ```
+
+## Data från API
+
+Det här repot innehåller även ett exempel på att hämta data med 11ty fetch från GitHub API.
+
+För att göra det så används fetch för att hämta din user profil från github. Men just användarnamnet är angivet i en speciell fil som heter `.env`. Du kan se en kopia av den filen utan känslig data i `.env-example`.
+
+[dotenv](https://www.npmjs.com/package/dotenv) filer används av ett npm-paket med samma namn. Det är ett sätt att spara känslig data utan att dela den, **eftersom du inte delar den**. Den är bara tillgänglig lokalt på din dator. Men det förutsätter att du har en `.gitignore` fil som säger åt git att ignorera den filen.
+
+```bash
+# .gitignore
+.env
+```
+
+För att då den som använder repot ska veta vilka variabler som behöver anges så skapas då oftast en kopia av filen utan känslig data. Den kallas då `.env-example` och innehåller bara exempel på hur filen ska se ut.
