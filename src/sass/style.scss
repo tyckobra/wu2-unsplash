@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: [first] 16% [line2] 16% [line3] 16% [line4] 16% [line5] 16% [line6] 16%;
+    grid-template-rows: [row1-start] 300px [row1-end] 300px [third-line] 300px [last-line];
+    row-gap: 6rem;
+    size: 100%;
+  }
+
+.item1 {
+    grid-column-start: 6;
+    grid-column-end: 2; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .item2 {
+    background-color: aqua;
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .item3 {
+    background-color: aqua;
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    grid-row-start: 3;
+    grid-row-end: 9;
+  }
