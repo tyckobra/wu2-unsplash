@@ -9,9 +9,6 @@ layout: base.njk
         {{ denmark[0].name.nativeName.nob.common }}
         {% image denmark[0].flags.png,"danskjävlar" %}
     </div>
-    <pre>
-        {{ denmark[0] | dump(2) }}
-    </pre>
     <section class="container">
     <section class="item">
         {% asyncAll item in unsplash.results %}

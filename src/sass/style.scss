@@ -1,24 +1,19 @@
 .container {
-    display: grid;
-    grid-template-columns: [first] 30% [line2] 30% [line3] 30%;
-    grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 25% [last-line] 25%;
-    gap: 2rem;
+    background-color: antiquewhite;
   }
 
 .item {
-    grid-column-start: 1;
-    grid-column-end: 4; 
-    grid-row-start: 1;
-    grid-row-end: 5;
-    border: 5px green;
+  display: grid;
+  background-color:darkgray;
+    grid-template-columns: [first] 30% [line2] 30% [line3] 30%;
+    grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 25% [fourth-line] 25% [last-line];
+    gap: 2rem;
     text-align: center;
     justify-self: center;
-    background-color:darkgray ;
+   
   }
 
  .flagga > picture > img {
-  width: 20rem;
-  justify-content: center;
+  width: 94rem;
+  justify-content: start;
 }
-
-j
