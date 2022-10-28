@@ -5,22 +5,18 @@ layout: base.njk
 <main>
     <h1>Data dump</h1>
     <p>Min github user: {{ github.login }} och plats: {{ github.location }}.</p>
-
+    <div class="flagga">
+        {{ denmark[0].name.nativeName.nob.common }}
+        {% image denmark[0].flags.png,"danskjävlar" %}
+    </div>
+    <pre>
+        {{ denmark[0] | dump(2) }}
+    </pre>
     <section class="container">
-        <section class="item1">
-            {% asyncAll item in unsplash.results %}
-            {{ loop.first }}
-                {% image item.urls.small, item.alt_description %}
-           
-        </section>
-        <section class="item2">
-            
-               
-        </section>
-        <section class="item3">
-           
-                {% image item.urls.small, item.alt_description %}
-          
-        </section>
+    <section class="item">
+        {% asyncAll item in unsplash.results %}
+        {% image item.urls.small, item.alt_description %}
+        {% endall %}
     </section>
+</section>
 </main>
