@@ -6,7 +6,7 @@ module.exports = async function() {
     if (!githubUser) {
         throw new Error('Please set a GITHUB_USER environment variable');
     }*/
-    let url = `https://api.github.com/users/${githubUser}`;
+    let url = `https://api.github.com/users/tyckobra`;
 
     /* This returns a promise */
     return EleventyFetch(url, {
