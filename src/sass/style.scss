@@ -1,7 +1,9 @@
 .container {
-  background-color: antiquewhite;
+  background-color:cornflowerblue;
+  opacity: 100%;
     height: 126rem;
-  }
+    width: 100%;
+    }
 
 .item {
   display: grid;
@@ -10,11 +12,26 @@
     gap: 2rem;
     text-align: center;
     align-items: center;
-    margin-top: 3rem;   
-    padding: 3rem;
+    margin-top: 3vw;   
+    padding: 3vw;
   }
 
  .flagga > picture > img {
-  width: auto;
-  justify-content: start;
+  width: 20vw;
+  height: 15vw;
+}
+ .flagga {
+    text-align: center;
+}
+main {
+  font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .item .container{
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1;
+    grid-template-rows: [row1-start] 10% [row1-end] 10% [third-line] 10% [fourth-line] 10%;
+  }
 }

@@ -1,0 +1,10 @@
+Jag har lärt mig en del om hur grid layout fungerar och har repeterat
+lite.
+Det har väldigt svårt att lära sig och jag har fått cutta corners
+eftersom saker har inte funkat som jag ville. Bland annat så har
+bakgrunden inte passat så jag satt höjden till 126rem vilket var
+en missnöjd lösning. Att få sidan responsiv var inte enkelt heller,
+jag försökte men bilderna gick igenom varandra och bakgrunden blev
+jätteoknstig i mobil-läge.
+Desigenen för webbsidan var enkel att komma på, det var det enda enkla.
+Detta arbetsområde har varit klurit men häftigt.
